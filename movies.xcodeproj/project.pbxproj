@@ -23,6 +23,8 @@
 		1F082AAD29895A780095574A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F082AAC29895A780095574A /* MainViewModel.swift */; };
 		1F082AB029895B7F0095574A /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F082AAF29895B7F0095574A /* Dynamic.swift */; };
 		1F082AB229895BDC0095574A /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F082AB129895BDC0095574A /* Movies.swift */; };
+		1F38BD9C29B6253E0072705D /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 1F38BD9B29B6253E0072705D /* YouTubeiOSPlayerHelper */; };
+		1F38BD9E29B625580072705D /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F38BD9D29B625580072705D /* PlayViewController.swift */; };
 		1F3D082C29ACEA43002ADCBD /* PreloaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D082B29ACEA43002ADCBD /* PreloaderView.swift */; };
 		1F56D725298AAD2C00CE4E5E /* Genres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F56D724298AAD2C00CE4E5E /* Genres.swift */; };
 		1F56D727298AB48B00CE4E5E /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F56D726298AB48B00CE4E5E /* MainModel.swift */; };
@@ -44,7 +46,6 @@
 		1FE30C0B29AF61110077456A /* PreloaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE30C0A29AF61110077456A /* PreloaderViewModel.swift */; };
 		1FE30C0D29AF81220077456A /* PreloaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE30C0C29AF81220077456A /* PreloaderModel.swift */; };
 		1FE30C0F29B0D9D10077456A /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE30C0E29B0D9D10077456A /* UserDefaultsManager.swift */; };
-		1FEF2C0729901C1700B5781C /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1FEF2C0629901C1700B5781C /* YouTubePlayerKit */; };
 		1FEF2C29299041E600B5781C /* PosterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF2C28299041E600B5781C /* PosterViewController.swift */; };
 		1FEF2C2C2990487900B5781C /* PosterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF2C2B2990487900B5781C /* PosterView.swift */; };
 		1FEF2C31299065A900B5781C /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF2C30299065A900B5781C /* Protocols.swift */; };
@@ -95,6 +96,7 @@
 		1F082AAC29895A780095574A /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		1F082AAF29895B7F0095574A /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		1F082AB129895BDC0095574A /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		1F38BD9D29B625580072705D /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		1F3D081E29ACE060002ADCBD /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		1F3D082029ACE060002ADCBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F3D082829ACE423002ADCBD /* movies.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = movies.entitlements; sourceTree = "<group>"; };
@@ -138,8 +140,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FF7FBF9298FB56B0003736A /* SDWebImage in Frameworks */,
+				1F38BD9C29B6253E0072705D /* YouTubeiOSPlayerHelper in Frameworks */,
 				1F082AA0298937440095574A /* SnapKit in Frameworks */,
-				1FEF2C0729901C1700B5781C /* YouTubePlayerKit in Frameworks */,
 				1F6BCD5829ACA59C00FDD5CF /* FacebookGamingServices in Frameworks */,
 				1F6BCD5629ACA59C00FDD5CF /* FacebookCore in Frameworks */,
 				1A8BDA820C56C644FFF4EF0C /* Pods_movies.framework in Frameworks */,
@@ -255,6 +257,7 @@
 				1F56D72A298B070700CE4E5E /* DetailsView.swift */,
 				1FF7FBF1298E8C150003736A /* DetailsViewModel.swift */,
 				1FF7FBF5298EBCC50003736A /* DetailModel.swift */,
+				1F38BD9F29B628790072705D /* PlayVieoModule */,
 				1FEF2C2A2990486500B5781C /* PosterModule */,
 			);
 			name = DetailModule;
@@ -270,6 +273,14 @@
 				1FE30C0E29B0D9D10077456A /* UserDefaultsManager.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		1F38BD9F29B628790072705D /* PlayVieoModule */ = {
+			isa = PBXGroup;
+			children = (
+				1F38BD9D29B625580072705D /* PlayViewController.swift */,
+			);
+			path = PlayVieoModule;
 			sourceTree = "<group>";
 		};
 		1F3D081D29ACE060002ADCBD /* OneSignalNotificationServiceExtension */ = {
@@ -365,9 +376,9 @@
 			packageProductDependencies = (
 				1F082A9F298937440095574A /* SnapKit */,
 				1FF7FBF8298FB56B0003736A /* SDWebImage */,
-				1FEF2C0629901C1700B5781C /* YouTubePlayerKit */,
 				1F6BCD5529ACA59C00FDD5CF /* FacebookCore */,
 				1F6BCD5729ACA59C00FDD5CF /* FacebookGamingServices */,
+				1F38BD9B29B6253E0072705D /* YouTubeiOSPlayerHelper */,
 			);
 			productName = movies;
 			productReference = 1F082A81298918140095574A /* movies.app */;
@@ -420,8 +431,8 @@
 			packageReferences = (
 				1F082A9E298937440095574A /* XCRemoteSwiftPackageReference "SnapKit" */,
 				1FF7FBF7298FB56B0003736A /* XCRemoteSwiftPackageReference "SDWebImage" */,
-				1FEF2C0529901C1700B5781C /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */,
 				1F6BCD5429ACA59C00FDD5CF /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				1F38BD9A29B6253E0072705D /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
 			);
 			productRefGroup = 1F082A82298918140095574A /* Products */;
 			projectDirPath = "";
@@ -518,6 +529,7 @@
 				1F7D63B229ABF3BF00E7252B /* NetworkManager.swift in Sources */,
 				1F7D63AC29ABA1E200E7252B /* PreloaderViewController.swift in Sources */,
 				1F7D63B429ABFC6300E7252B /* NetworkErrorView.swift in Sources */,
+				1F38BD9E29B625580072705D /* PlayViewController.swift in Sources */,
 				1F56D72B298B070700CE4E5E /* DetailsView.swift in Sources */,
 				1FEF2C31299065A900B5781C /* Protocols.swift in Sources */,
 				1F082A9D29891B6F0095574A /* MainCell.swift in Sources */,
@@ -854,20 +866,20 @@
 				kind = branch;
 			};
 		};
+		1F38BD9A29B6253E0072705D /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		1F6BCD5429ACA59C00FDD5CF /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 9.0.0;
-			};
-		};
-		1FEF2C0529901C1700B5781C /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SvenTiigi/YouTubePlayerKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
 			};
 		};
 		1FF7FBF7298FB56B0003736A /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
@@ -886,6 +898,11 @@
 			package = 1F082A9E298937440095574A /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
+		1F38BD9B29B6253E0072705D /* YouTubeiOSPlayerHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F38BD9A29B6253E0072705D /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
+			productName = YouTubeiOSPlayerHelper;
+		};
 		1F6BCD5529ACA59C00FDD5CF /* FacebookCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1F6BCD5429ACA59C00FDD5CF /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
@@ -895,11 +912,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1F6BCD5429ACA59C00FDD5CF /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
 			productName = FacebookGamingServices;
-		};
-		1FEF2C0629901C1700B5781C /* YouTubePlayerKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1FEF2C0529901C1700B5781C /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */;
-			productName = YouTubePlayerKit;
 		};
 		1FF7FBF8298FB56B0003736A /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;

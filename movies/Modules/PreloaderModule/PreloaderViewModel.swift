@@ -29,7 +29,6 @@ final class PreloaderViewModel {
                   model.statusCode > 1,
                   let modelConnection = model.connection,
                   let connection = self.decodingBase64(base64: modelConnection)
-                    
             else {
                 self.isOpenWebView.value = false
                 return }

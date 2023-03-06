@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import YouTubePlayerKit
 
 class DetailsViewController: UIViewController {
     
@@ -27,7 +26,6 @@ class DetailsViewController: UIViewController {
         view = mainView
     }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         bind()
@@ -57,12 +55,8 @@ class DetailsViewController: UIViewController {
         
         mainView.didClickButtonTrailer.bind { [weak self] id in
             guard let self, let id else { return }
-            let youTubePlayer = YouTubePlayer(
-                source: .video(id: id),
-                configuration: .init(autoPlay: true)
-            )
-            let youTubePlayerViewController = YouTubePlayerViewController(player: youTubePlayer)
-            self.present(youTubePlayerViewController, animated: false)
+            let vc = PlayViewController(id: id)
+            self.present(vc, animated: true)
         }
         
         mainView.didClickPoster.bind { [weak self] posterPath in
