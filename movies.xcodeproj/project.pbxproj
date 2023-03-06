@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A8BDA820C56C644FFF4EF0C /* Pods_movies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1805FB073B9A3D8E91EB5B6 /* Pods_movies.framework */; };
 		1F082A85298918140095574A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F082A84298918140095574A /* AppDelegate.swift */; };
 		1F082A87298918140095574A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F082A86298918140095574A /* SceneDelegate.swift */; };
 		1F082A89298918140095574A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F082A88298918140095574A /* MainViewController.swift */; };
@@ -22,13 +23,27 @@
 		1F082AAD29895A780095574A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F082AAC29895A780095574A /* MainViewModel.swift */; };
 		1F082AB029895B7F0095574A /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F082AAF29895B7F0095574A /* Dynamic.swift */; };
 		1F082AB229895BDC0095574A /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F082AB129895BDC0095574A /* Movies.swift */; };
+		1F3D082C29ACEA43002ADCBD /* PreloaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D082B29ACEA43002ADCBD /* PreloaderView.swift */; };
 		1F56D725298AAD2C00CE4E5E /* Genres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F56D724298AAD2C00CE4E5E /* Genres.swift */; };
 		1F56D727298AB48B00CE4E5E /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F56D726298AB48B00CE4E5E /* MainModel.swift */; };
 		1F56D729298B068E00CE4E5E /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F56D728298B068E00CE4E5E /* DetailsViewController.swift */; };
 		1F56D72B298B070700CE4E5E /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F56D72A298B070700CE4E5E /* DetailsView.swift */; };
 		1F60C818298BD2B000F621E6 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60C817298BD2B000F621E6 /* Extension.swift */; };
+		1F6BCD5629ACA59C00FDD5CF /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 1F6BCD5529ACA59C00FDD5CF /* FacebookCore */; };
+		1F6BCD5829ACA59C00FDD5CF /* FacebookGamingServices in Frameworks */ = {isa = PBXBuildFile; productRef = 1F6BCD5729ACA59C00FDD5CF /* FacebookGamingServices */; };
+		1F76C09929B5F9770079DC50 /* PreloaderView + Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F76C09829B5F9770079DC50 /* PreloaderView + Delegate.swift */; };
+		1F76C0A129B5FC860079DC50 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F76C0A029B5FC860079DC50 /* NotificationService.swift */; };
+		1F76C0A529B5FC860079DC50 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1F76C09E29B5FC860079DC50 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1F7D63AC29ABA1E200E7252B /* PreloaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D63AB29ABA1E200E7252B /* PreloaderViewController.swift */; };
+		1F7D63AE29ABA53400E7252B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D63AD29ABA53400E7252B /* AppCoordinator.swift */; };
+		1F7D63B029ABA59100E7252B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D63AF29ABA59100E7252B /* Coordinator.swift */; };
+		1F7D63B229ABF3BF00E7252B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D63B129ABF3BF00E7252B /* NetworkManager.swift */; };
+		1F7D63B429ABFC6300E7252B /* NetworkErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D63B329ABFC6300E7252B /* NetworkErrorView.swift */; };
 		1FADD7B3298A5D0A0028FA6D /* TypeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FADD7B2298A5D0A0028FA6D /* TypeRequest.swift */; };
 		1FADD7B5298A5DFD0028FA6D /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FADD7B4298A5DFD0028FA6D /* Filter.swift */; };
+		1FE30C0B29AF61110077456A /* PreloaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE30C0A29AF61110077456A /* PreloaderViewModel.swift */; };
+		1FE30C0D29AF81220077456A /* PreloaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE30C0C29AF81220077456A /* PreloaderModel.swift */; };
+		1FE30C0F29B0D9D10077456A /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE30C0E29B0D9D10077456A /* UserDefaultsManager.swift */; };
 		1FEF2C0729901C1700B5781C /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1FEF2C0629901C1700B5781C /* YouTubePlayerKit */; };
 		1FEF2C29299041E600B5781C /* PosterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF2C28299041E600B5781C /* PosterViewController.swift */; };
 		1FEF2C2C2990487900B5781C /* PosterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF2C2B2990487900B5781C /* PosterView.swift */; };
@@ -38,6 +53,30 @@
 		1FF7FBF6298EBCC50003736A /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF7FBF5298EBCC50003736A /* DetailModel.swift */; };
 		1FF7FBF9298FB56B0003736A /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 1FF7FBF8298FB56B0003736A /* SDWebImage */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F76C0A329B5FC860079DC50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F082A79298918140095574A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F76C09D29B5FC860079DC50;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F3D082429ACE060002ADCBD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1F76C0A529B5FC860079DC50 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1F082A81298918140095574A /* movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = movies.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,19 +95,41 @@
 		1F082AAC29895A780095574A /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		1F082AAF29895B7F0095574A /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		1F082AB129895BDC0095574A /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		1F3D081E29ACE060002ADCBD /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		1F3D082029ACE060002ADCBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F3D082829ACE423002ADCBD /* movies.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = movies.entitlements; sourceTree = "<group>"; };
+		1F3D082B29ACEA43002ADCBD /* PreloaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderView.swift; sourceTree = "<group>"; };
 		1F56D724298AAD2C00CE4E5E /* Genres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genres.swift; sourceTree = "<group>"; };
 		1F56D726298AB48B00CE4E5E /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		1F56D728298B068E00CE4E5E /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		1F56D72A298B070700CE4E5E /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		1F60C817298BD2B000F621E6 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		1F76C09829B5F9770079DC50 /* PreloaderView + Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreloaderView + Delegate.swift"; sourceTree = "<group>"; };
+		1F76C09E29B5FC860079DC50 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F76C0A029B5FC860079DC50 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		1F76C0A229B5FC860079DC50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F7D63AB29ABA1E200E7252B /* PreloaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderViewController.swift; sourceTree = "<group>"; };
+		1F7D63AD29ABA53400E7252B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		1F7D63AF29ABA59100E7252B /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		1F7D63B129ABF3BF00E7252B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1F7D63B329ABFC6300E7252B /* NetworkErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorView.swift; sourceTree = "<group>"; };
 		1FADD7B2298A5D0A0028FA6D /* TypeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeRequest.swift; sourceTree = "<group>"; };
 		1FADD7B4298A5DFD0028FA6D /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		1FE30C0A29AF61110077456A /* PreloaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderViewModel.swift; sourceTree = "<group>"; };
+		1FE30C0C29AF81220077456A /* PreloaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderModel.swift; sourceTree = "<group>"; };
+		1FE30C0E29B0D9D10077456A /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		1FEF2C28299041E600B5781C /* PosterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterViewController.swift; sourceTree = "<group>"; };
 		1FEF2C2B2990487900B5781C /* PosterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterView.swift; sourceTree = "<group>"; };
 		1FEF2C30299065A900B5781C /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		1FF7FBF1298E8C150003736A /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		1FF7FBF3298E900E0003736A /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 		1FF7FBF5298EBCC50003736A /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
+		7AA5E810B648130C5A4312ED /* Pods-movies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movies.release.xcconfig"; path = "Target Support Files/Pods-movies/Pods-movies.release.xcconfig"; sourceTree = "<group>"; };
+		7F39B67523A2624AEF88423C /* Pods-movies-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movies-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-movies-OneSignalNotificationServiceExtension/Pods-movies-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		D8791F3E5E7F5040DEE454C3 /* Pods_movies_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_movies_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D880C6E4C445114B260B1839 /* Pods-movies-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movies-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-movies-OneSignalNotificationServiceExtension/Pods-movies-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		E1805FB073B9A3D8E91EB5B6 /* Pods_movies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_movies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF1DB059FCB1E13366ED7DF2 /* Pods-movies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movies.debug.xcconfig"; path = "Target Support Files/Pods-movies/Pods-movies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,17 +140,40 @@
 				1FF7FBF9298FB56B0003736A /* SDWebImage in Frameworks */,
 				1F082AA0298937440095574A /* SnapKit in Frameworks */,
 				1FEF2C0729901C1700B5781C /* YouTubePlayerKit in Frameworks */,
+				1F6BCD5829ACA59C00FDD5CF /* FacebookGamingServices in Frameworks */,
+				1F6BCD5629ACA59C00FDD5CF /* FacebookCore in Frameworks */,
+				1A8BDA820C56C644FFF4EF0C /* Pods_movies.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F76C09B29B5FC860079DC50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13BBEBDCE81D82C6DBD11175 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1805FB073B9A3D8E91EB5B6 /* Pods_movies.framework */,
+				D8791F3E5E7F5040DEE454C3 /* Pods_movies_OneSignalNotificationServiceExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1F082A78298918140095574A = {
 			isa = PBXGroup;
 			children = (
 				1F082A83298918140095574A /* movies */,
+				1F3D081D29ACE060002ADCBD /* OneSignalNotificationServiceExtension */,
+				1F76C09F29B5FC860079DC50 /* OneSignalNotificationServiceExtension */,
 				1F082A82298918140095574A /* Products */,
+				23DA96D927491586045CBCE9 /* Pods */,
+				13BBEBDCE81D82C6DBD11175 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				1F082A81298918140095574A /* movies.app */,
+				1F76C09E29B5FC860079DC50 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,6 +189,7 @@
 		1F082A83298918140095574A /* movies */ = {
 			isa = PBXGroup;
 			children = (
+				1F3D082829ACE423002ADCBD /* movies.entitlements */,
 				1F082A84298918140095574A /* AppDelegate.swift */,
 				1F082A86298918140095574A /* SceneDelegate.swift */,
 				1FEF2C2F2990659500B5781C /* Helpers */,
@@ -155,6 +241,7 @@
 		1F082AAA298939900095574A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				1F3D082A29ACE805002ADCBD /* PreloaderModule */,
 				1F082AA92989396B0095574A /* MainModule */,
 				1F082AAB2989399D0095574A /* DetailModule */,
 			);
@@ -179,8 +266,48 @@
 			children = (
 				1F082AA7298938F90095574A /* Network */,
 				1F082AAF29895B7F0095574A /* Dynamic.swift */,
+				1F7D63B129ABF3BF00E7252B /* NetworkManager.swift */,
+				1FE30C0E29B0D9D10077456A /* UserDefaultsManager.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		1F3D081D29ACE060002ADCBD /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				1F3D081E29ACE060002ADCBD /* NotificationService.swift */,
+				1F3D082029ACE060002ADCBD /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		1F3D082929ACE7E9002ADCBD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F7D63B329ABFC6300E7252B /* NetworkErrorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1F3D082A29ACE805002ADCBD /* PreloaderModule */ = {
+			isa = PBXGroup;
+			children = (
+				1F7D63AB29ABA1E200E7252B /* PreloaderViewController.swift */,
+				1F3D082B29ACEA43002ADCBD /* PreloaderView.swift */,
+				1F76C09829B5F9770079DC50 /* PreloaderView + Delegate.swift */,
+				1FE30C0A29AF61110077456A /* PreloaderViewModel.swift */,
+				1FE30C0C29AF81220077456A /* PreloaderModel.swift */,
+			);
+			path = PreloaderModule;
+			sourceTree = "<group>";
+		};
+		1F76C09F29B5FC860079DC50 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				1F76C0A029B5FC860079DC50 /* NotificationService.swift */,
+				1F76C0A229B5FC860079DC50 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
 			sourceTree = "<group>";
 		};
 		1FEF2C2A2990486500B5781C /* PosterModule */ = {
@@ -195,10 +322,24 @@
 		1FEF2C2F2990659500B5781C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				1F3D082929ACE7E9002ADCBD /* Views */,
 				1F60C817298BD2B000F621E6 /* Extension.swift */,
 				1FEF2C30299065A900B5781C /* Protocols.swift */,
+				1F7D63AD29ABA53400E7252B /* AppCoordinator.swift */,
+				1F7D63AF29ABA59100E7252B /* Coordinator.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		23DA96D927491586045CBCE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF1DB059FCB1E13366ED7DF2 /* Pods-movies.debug.xcconfig */,
+				7AA5E810B648130C5A4312ED /* Pods-movies.release.xcconfig */,
+				D880C6E4C445114B260B1839 /* Pods-movies-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				7F39B67523A2624AEF88423C /* Pods-movies-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,23 +349,46 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F082A95298918160095574A /* Build configuration list for PBXNativeTarget "movies" */;
 			buildPhases = (
+				827B434385854F96FBAB5B2D /* [CP] Check Pods Manifest.lock */,
 				1F082A7D298918140095574A /* Sources */,
 				1F082A7E298918140095574A /* Frameworks */,
 				1F082A7F298918140095574A /* Resources */,
+				1F3D082429ACE060002ADCBD /* Embed Foundation Extensions */,
+				C7D46CDC8133C96C2947E8FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1F76C0A429B5FC860079DC50 /* PBXTargetDependency */,
 			);
 			name = movies;
 			packageProductDependencies = (
 				1F082A9F298937440095574A /* SnapKit */,
 				1FF7FBF8298FB56B0003736A /* SDWebImage */,
 				1FEF2C0629901C1700B5781C /* YouTubePlayerKit */,
+				1F6BCD5529ACA59C00FDD5CF /* FacebookCore */,
+				1F6BCD5729ACA59C00FDD5CF /* FacebookGamingServices */,
 			);
 			productName = movies;
 			productReference = 1F082A81298918140095574A /* movies.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1F76C09D29B5FC860079DC50 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F76C0A629B5FC860079DC50 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				1F76C09A29B5FC860079DC50 /* Sources */,
+				1F76C09B29B5FC860079DC50 /* Frameworks */,
+				1F76C09C29B5FC860079DC50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 1F76C09E29B5FC860079DC50 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -237,6 +401,9 @@
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					1F082A80298918140095574A = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					1F76C09D29B5FC860079DC50 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -254,12 +421,14 @@
 				1F082A9E298937440095574A /* XCRemoteSwiftPackageReference "SnapKit" */,
 				1FF7FBF7298FB56B0003736A /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				1FEF2C0529901C1700B5781C /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */,
+				1F6BCD5429ACA59C00FDD5CF /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 			);
 			productRefGroup = 1F082A82298918140095574A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1F082A80298918140095574A /* movies */,
+				1F76C09D29B5FC860079DC50 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -274,7 +443,56 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F76C09C29B5FC860079DC50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		827B434385854F96FBAB5B2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-movies-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7D46CDC8133C96C2947E8FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-movies/Pods-movies-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-movies/Pods-movies-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-movies/Pods-movies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F082A7D298918140095574A /* Sources */ = {
@@ -283,10 +501,13 @@
 			files = (
 				1F56D727298AB48B00CE4E5E /* MainModel.swift in Sources */,
 				1F082AA4298938E40095574A /* NetworkDataFetcher.swift in Sources */,
+				1FE30C0F29B0D9D10077456A /* UserDefaultsManager.swift in Sources */,
 				1F082A89298918140095574A /* MainViewController.swift in Sources */,
+				1F3D082C29ACEA43002ADCBD /* PreloaderView.swift in Sources */,
 				1F082AA2298938D80095574A /* DataFetcherService.swift in Sources */,
 				1F082A99298918DF0095574A /* MainView.swift in Sources */,
 				1F082AA6298938EF0095574A /* NetworkService.swift in Sources */,
+				1F7D63AE29ABA53400E7252B /* AppCoordinator.swift in Sources */,
 				1FADD7B3298A5D0A0028FA6D /* TypeRequest.swift in Sources */,
 				1FF7FBF2298E8C150003736A /* DetailsViewModel.swift in Sources */,
 				1F56D725298AAD2C00CE4E5E /* Genres.swift in Sources */,
@@ -294,22 +515,45 @@
 				1F56D729298B068E00CE4E5E /* DetailsViewController.swift in Sources */,
 				1FEF2C2C2990487900B5781C /* PosterView.swift in Sources */,
 				1FADD7B5298A5DFD0028FA6D /* Filter.swift in Sources */,
+				1F7D63B229ABF3BF00E7252B /* NetworkManager.swift in Sources */,
+				1F7D63AC29ABA1E200E7252B /* PreloaderViewController.swift in Sources */,
+				1F7D63B429ABFC6300E7252B /* NetworkErrorView.swift in Sources */,
 				1F56D72B298B070700CE4E5E /* DetailsView.swift in Sources */,
 				1FEF2C31299065A900B5781C /* Protocols.swift in Sources */,
 				1F082A9D29891B6F0095574A /* MainCell.swift in Sources */,
 				1F60C818298BD2B000F621E6 /* Extension.swift in Sources */,
 				1F082AB029895B7F0095574A /* Dynamic.swift in Sources */,
+				1FE30C0D29AF81220077456A /* PreloaderModel.swift in Sources */,
+				1F76C09929B5F9770079DC50 /* PreloaderView + Delegate.swift in Sources */,
+				1F7D63B029ABA59100E7252B /* Coordinator.swift in Sources */,
 				1F082AB229895BDC0095574A /* Movies.swift in Sources */,
 				1FEF2C29299041E600B5781C /* PosterViewController.swift in Sources */,
 				1F082A9B29891B440095574A /* MainView + Delegate.swift in Sources */,
 				1F082A85298918140095574A /* AppDelegate.swift in Sources */,
 				1F082A87298918140095574A /* SceneDelegate.swift in Sources */,
+				1FE30C0B29AF61110077456A /* PreloaderViewModel.swift in Sources */,
 				1FF7FBF6298EBCC50003736A /* DetailModel.swift in Sources */,
 				1FF7FBF4298E900E0003736A /* Detail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F76C09A29B5FC860079DC50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F76C0A129B5FC860079DC50 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F76C0A429B5FC860079DC50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F76C09D29B5FC860079DC50 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 1F76C0A329B5FC860079DC50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1F082A8F298918160095574A /* LaunchScreen.storyboard */ = {
@@ -373,7 +617,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -427,7 +671,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -439,61 +683,133 @@
 		};
 		1F082A96298918160095574A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF1DB059FCB1E13366ED7DF2 /* Pods-movies.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = movies/movies.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = movies/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "HQ Movies+\n";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Share app need access photo library";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use the vendor's identifier to better understand how you use our app and provide you with personalized content.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.movies.movies;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sat.hqmovies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		1F082A97298918160095574A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AA5E810B648130C5A4312ED /* Pods-movies.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = movies/movies.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = movies/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "HQ Movies+\n";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Share app need access photo library";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use the vendor's identifier to better understand how you use our app and provide you with personalized content.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.movies.movies;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sat.hqmovies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1F76C0A729B5FC860079DC50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sat.hqmovies.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F76C0A829B5FC860079DC50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sat.hqmovies.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -518,6 +834,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		1F76C0A629B5FC860079DC50 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F76C0A729B5FC860079DC50 /* Debug */,
+				1F76C0A829B5FC860079DC50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -527,6 +852,14 @@
 			requirement = {
 				branch = develop;
 				kind = branch;
+			};
+		};
+		1F6BCD5429ACA59C00FDD5CF /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
 			};
 		};
 		1FEF2C0529901C1700B5781C /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */ = {
@@ -552,6 +885,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1F082A9E298937440095574A /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		1F6BCD5529ACA59C00FDD5CF /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F6BCD5429ACA59C00FDD5CF /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		1F6BCD5729ACA59C00FDD5CF /* FacebookGamingServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F6BCD5429ACA59C00FDD5CF /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookGamingServices;
 		};
 		1FEF2C0629901C1700B5781C /* YouTubePlayerKit */ = {
 			isa = XCSwiftPackageProductDependency;

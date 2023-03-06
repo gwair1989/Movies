@@ -119,19 +119,9 @@ class MainCell: UICollectionViewCell {
         contentView.addSubview(ratingLabel)
         contentView.layer.cornerRadius = 10
         contentView.clipsToBounds = true
-        addShadow()
+        self.addShadow()
         addConstraints()
     }
-    
-    private func addShadow() {
-        layer.borderWidth = 0.0
-        layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOffset = CGSize(width: 0, height: 0)
-        layer.shadowRadius = 5.0
-        layer.shadowOpacity = 1
-        layer.masksToBounds = false
-    }
-    
     
     private func addConstraints() {
         backgroundImage.snp.makeConstraints { make in
@@ -163,7 +153,6 @@ class MainCell: UICollectionViewCell {
             make.trailing.equalToSuperview().offset(-20)
             make.bottom.equalToSuperview().offset(-20)
         }
-        
         
     }
     

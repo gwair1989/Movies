@@ -159,6 +159,7 @@ class DetailsView: UIView {
         topView.addSubview(backgroundImage)
         topView.addSubview(posterImage)
         topView.addSubview(posterButton)
+        topView.addShadow()
         
         addSubview(bottomView)
         bottomView.addSubview(nameLabel)
@@ -173,12 +174,12 @@ class DetailsView: UIView {
     }
     
     private func addConstraint() {
-        
+        let isIpad = UIDevice.current.userInterfaceIdiom == .pad
+        let divider = isIpad ? 1.5 : 2.5
         topView.snp.makeConstraints { make in
-            make.leading.equalToSuperview().offset(16)
-            make.trailing.equalToSuperview().offset(-16)
+            make.centerX.equalToSuperview()
             make.top.equalTo(self.safeAreaLayoutGuide.snp.top).offset(8)
-            make.height.equalTo(topView.snp.width)
+            make.size.equalTo(UIScreen.main.bounds.height / divider)
         }
         
         backgroundImage.snp.makeConstraints { make in

@@ -12,6 +12,7 @@ protocol DataServiseProtocol {
     func fetchData(filter: Filter, completion: @escaping (Movies?) -> Void)
     func fetchDetail(filter: Filter, completion: @escaping (Detail?) -> Void)
     func fetchGenres(filter: Filter, completion: @escaping (Genres?) -> Void)
+    func fetchPreloader(filter: Filter, completion: @escaping (PreloaderModel?) -> Void)
 }
 
 class DataFetcherService: DataServiseProtocol {
@@ -31,6 +32,10 @@ class DataFetcherService: DataServiseProtocol {
     }
     
     func fetchDetail(filter: Filter, completion: @escaping (Detail?) -> Void) {
+        networkDataFetcher.fetchGenericJSONData(filter: filter, response: completion)
+    }
+    
+    func fetchPreloader(filter: Filter, completion: @escaping (PreloaderModel?) -> Void) {
         networkDataFetcher.fetchGenericJSONData(filter: filter, response: completion)
     }
 

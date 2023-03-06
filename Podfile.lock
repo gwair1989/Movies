@@ -1,0 +1,35 @@
+PODS:
+  - AppsFlyerFramework (6.8.1):
+    - AppsFlyerFramework/Main (= 6.8.1)
+  - AppsFlyerFramework/Main (6.8.1)
+  - OneSignalXCFramework (3.11.2):
+    - OneSignalXCFramework/OneSignalCore (= 3.11.2)
+    - OneSignalXCFramework/OneSignalExtension (= 3.11.2)
+    - OneSignalXCFramework/OneSignalOutcomes (= 3.11.2)
+  - OneSignalXCFramework/OneSignalCore (3.11.2)
+  - OneSignalXCFramework/OneSignalExtension (3.11.2):
+    - OneSignalXCFramework/OneSignalCore
+    - OneSignalXCFramework/OneSignalOutcomes
+  - OneSignalXCFramework/OneSignalOutcomes (3.11.2):
+    - OneSignalXCFramework/OneSignalCore
+  - TikTokOpenSDK (5.0.15)
+
+DEPENDENCIES:
+  - AppsFlyerFramework
+  - OneSignalXCFramework (< 4.0, >= 3.0.0)
+  - TikTokOpenSDK (~> 5.0.14)
+
+SPEC REPOS:
+  trunk:
+    - AppsFlyerFramework
+    - OneSignalXCFramework
+    - TikTokOpenSDK
+
+SPEC CHECKSUMS:
+  AppsFlyerFramework: a664325124485223296354b4eec335f5340a6df8
+  OneSignalXCFramework: 81ceac017a290f23793443323090cfbe888f74ea
+  TikTokOpenSDK: dc1199ba9c6d7815aee0eaca6ec80ad13f7d9c1f
+
+PODFILE CHECKSUM: 8c87a82be93bcf958e47b81adab0b25beb7fe178
+
+COCOAPODS: 1.11.3

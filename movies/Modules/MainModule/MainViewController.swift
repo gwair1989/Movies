@@ -9,9 +9,12 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    weak var coordinator: AppCoordinator?
     private let mainView = MainView()
     private var viewModel: MainViewModelProtocol
+    private let networkManager: NetworkManager = NetworkManager.shared
     private var timer: Timer?
+    lazy var errorView = NetworkErrorView(networkManager: networkManager)
     
     init(viewModel: MainViewModelProtocol = MainViewModel()) {
         self.viewModel = viewModel
@@ -38,6 +41,7 @@ class MainViewController: UIViewController {
     
     
     private func setupNavBar() {
+        navigationController?.navigationBar.isHidden = false
         title = "Popular Movies"
         if #unavailable(iOS 16) {
             navigationController?.navigationBar.isTranslucent = false
@@ -71,8 +75,16 @@ class MainViewController: UIViewController {
         return menuItems
     }
     
-    
     private func bind() {
+        networkManager.isShowAlert.bind {[weak self] isShow in
+            guard let self else { return }
+            if isShow {
+                self.showErrorView()
+            } else {
+                self.errorView.isHidden = true
+            }
+        }
+        
         viewModel.model.bind { [weak self] movies in
             guard let self,  !movies.isEmpty else { return }
             self.mainView.configure(newMovies: movies)
@@ -85,8 +97,9 @@ class MainViewController: UIViewController {
         
         mainView.didClickCell.bind { [weak self] id in
             guard let self, let id else { return }
-            let detailVC = DetailsViewController(id: id)
-            self.navigationController?.pushViewController(detailVC, animated: true)
+            DispatchQueue.main.async {
+                self.coordinator?.toDetailVC(id: id)
+            }
         }
         
         mainView.searchTerm.bind { [weak self] searchTerm in
@@ -108,5 +121,14 @@ class MainViewController: UIViewController {
             })
         }
         
+    }
+    
+    private func showErrorView() {
+        let errorView = NetworkErrorView(networkManager: networkManager)
+        self.view.addSubview(errorView)
+        
+        errorView.snp.makeConstraints { make in
+            make.top.bottom.leading.trailing.equalToSuperview()
+        }
     }
 }

@@ -21,7 +21,6 @@ class PosterViewController: UIViewController {
     
     private var imageScrollView: PosterView!
     
-    
     private let activityIndicator: UIActivityIndicatorView = {
         let obj = UIActivityIndicatorView()
         obj.isHidden = false

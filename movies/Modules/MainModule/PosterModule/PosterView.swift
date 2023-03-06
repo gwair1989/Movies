@@ -48,10 +48,8 @@ class PosterView: UIScrollView, UIScrollViewDelegate {
     
     func configurateFor(imageSize: CGSize) {
         self.contentSize = imageSize
-        
         setCurrentMaxandMinZoomScale()
         self.zoomScale = self.minimumZoomScale
-        
         self.imageZoomView.addGestureRecognizer(self.zoomingTap)
         self.imageZoomView.isUserInteractionEnabled = true
 
@@ -59,9 +57,7 @@ class PosterView: UIScrollView, UIScrollViewDelegate {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        
         self.centerImage()
-        
     }
     
     func setCurrentMaxandMinZoomScale() {

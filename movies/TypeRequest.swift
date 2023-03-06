@@ -12,4 +12,5 @@ enum TypeRequest {
     case details
     case search
     case genges
+    case preloader
 }

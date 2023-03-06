@@ -71,7 +71,6 @@ class MainView: UIView {
     
     func configure(newMovies: [MainModel]) {
         if self.movies.isEmpty {
-
             self.movies = newMovies
             collectionView.reloadData()
         } else {
@@ -88,9 +87,8 @@ class MainView: UIView {
     }
     
     func showCollectionView() {
-                activityIndicator.isHidden = true
-                activityIndicator.stopAnimating()
-        
+        activityIndicator.isHidden = true
+        activityIndicator.stopAnimating()
         UIView.animate(withDuration: 0.5, animations: { [weak self] in
             self?.collectionView.alpha = 1
         })
